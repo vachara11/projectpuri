@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="orange">
+    <ion-title>การตั้งค่า</ion-title>
+  </ion-toolbar>
+</ion-header>
+<br>
+<ion-content [fullscreen]="true" color="oranges" class="ion-padding">
+
+  <ion-avatar style="margin-left: 110px;">
+    <img src="assets/img/Profile.jfif">
+  </ion-avatar>
+
+  <div style="margin-top: 25px;">
+    <form>
+      <ion-item>
+        <ion-input label="ชื่อ : "> </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input label="นามสกุล : "></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input label="อีเมล : "></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input label="โทรศัพท์ : "></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input label="ที่อยู : "></ion-input>
+      </ion-item>
+
+      <br>
+      <div class="text-center" style="margin-left: 130px;">
+        <ion-button color="orangesa" (click)="Homes()">ยืนยัน</ion-button>
+      </div>
+    </form>
+  </div>
+</ion-content>

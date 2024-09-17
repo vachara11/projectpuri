@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="oranges">
+    <ion-title>รายการสั่งซื้อ</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="orange">
+<ion-card  *ngFor="let i of items">
+  <ion-item>
+  <ion-avatar>
+    <img [src]="i.imageURL">
+  </ion-avatar>&nbsp;&nbsp;&nbsp;&nbsp;
+  <ion-label>
+    {{i.name}}
+  </ion-label>
+  <ion-label>
+    {{i.price}}฿
+  </ion-label>
+    <ion-button expand="block" (click)="gotosettingdtail(i)" >สั่งซื้อ</ion-button>
+  </ion-item>
+</ion-card>
+</ion-content>

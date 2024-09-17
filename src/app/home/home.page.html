@@ -1,0 +1,26 @@
+<ion-content [fullscreen]="true">
+  <ion-header [translucent]="true">
+    <ion-toolbar color="oranges">
+      <ion-title>Login</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content [fullscreen]="true" color="orange" class="ion-padding">
+
+    <br>
+    <ion-card class="img-border">
+      <ion-img src="assets/img/logoa.jfif"></ion-img>
+    </ion-card>
+    <h1 class="text-center">Som UR Day</h1>
+    <form>
+      <ion-item style="margin-top: 25px;">
+        <ion-input label="Gmail :"></ion-input>
+      </ion-item>
+      <ion-item style="margin-top: 5px;">
+        <ion-input label="Password :"></ion-input>
+      </ion-item>
+
+      <ion-button style="margin-top: 25px;" expand="block" (click)="detail()">Login</ion-button>
+      <ion-button expand="block" (click)="As()">Sigup</ion-button>
+    </form>
+  </ion-content>
